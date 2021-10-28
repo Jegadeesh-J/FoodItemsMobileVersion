@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart Mobile View</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        background-color:#FAFAFA;
+        width: 380px;
+       height: 900px;
+        margin: 0 auto;
+        padding: 10px 30px;
+        position: relative;
+      }
+      h1 {
+        font-size: 35px;
+        text-align: center;
+        display: inline-block;
+      }
+      .head {
+        position: relative;
+        text-align: center;
+      }
+      .main h1 {
+        line-height: 50px;
+        text-align: left;
+        padding: 40px 0;
+      }
+      .head i {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        font-size: 30px;
+        color: tomato;
+      }
+      .head img {
+        width: 35px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+     
+      .main p {
+        font-size: 18px;
+        color: #9a9a9a;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 300px;
+        position: absolute;
+        bottom: 70px; 
+      }
+
+      .foodItems div {
+        display: inline-block;
+        width: 140px;
+        height: 170px;
+        background-color: white;
+        border-radius: 15px;
+        margin:15px 8px;
+        box-shadow: 0px 0px 30px #dbdbdb;
+      }
+
+      .foodItems img {
+        width: 100px;
+        height: 80px;
+        margin: 25px;
+        border-radius: 50%;
+      }
+      figcaption {
+        font-weight: 550;
+        text-align: center;
+      }
+      .main p::after {        
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 65px;
+        height: 2px;
+        background-color: tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="head">
+        <i class="fas fa-bars"></i>
+        <h1>Lorem</h1>
+        <img
+          src="https://i.ibb.co/tq9G4YK/imageedit-6-9434139473-removebg-preview.png"
+          alt="carticon"
+        />
+      </div>
+      <div class="main">
+        <h1>
+          What are you <br />
+          having for Lunch ?
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit, eum officiis
+          sed fugit architecto hic rem aperiam. Qui, ut labore et.
+        </p>
+
+        <div class="foodItems">
+          <div class="MexicanTaco">
+            <img
+              src="https://imgk.timesnownews.com/story/chad-montano-lP5MCM6nZ5A-unsplash.jpg?tr=w-400,h-300,fo-auto"
+              alt="Mexican Taco"
+            />
+            <figcaption>Mexican Taco</figcaption>
+          </div>
+          <div class="FarmhousePizza">
+            <img
+              src="https://www.brotherskitchen.in/wp-content/uploads/2021/03/farmhouse-pizza-vegetarian-pizza-with-mouth-watering-toppings_1024-768-600x450.jpg"
+              alt="FarmhousePizza"
+            />
+            <figcaption>Farmhouse Pizza</figcaption>
+          </div>
+          <div class="ChickenBurger">
+            <img
+              src="https://curtisgallon.com/wp-content/uploads/2014/02/pulled-chicken-burger-l-chips-good-light-1-2.jpg"
+              alt="ChickenBurger"
+            />
+            <figcaption>Chicken Burger</figcaption>
+          </div>
+          <div class="Loadednachos">
+            <img
+              src="https://www.whiskaffair.com/wp-content/uploads/2019/03/Loaded-Nachos-1-4.jpg"
+              alt="hakkaNoodle"
+            />
+            <figcaption>Loaded nachos</figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
